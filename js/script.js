@@ -3,7 +3,7 @@ const API_CONFIG = {
     name: "OpenRouter AI",
     apiKey: "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",
     apiEndpoint: "https://openrouter.ai/api/v1/chat/completions",
-    defaultModel: "openai/chatgpt-4o-latest",
+    defaultModel: "deepseek/deepseek-r1-0528:free",
     
     // OpenRouter models
     models: {
