@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Priyangshu AI</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-wrapper">
+            <!-- Left Side - Branding -->
+            <div class="login-brand">
+                <div class="brand-logo">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h1>Priyangshu AI</h1>
+                <p class="tagline">Your intelligent assistant powered by advanced AI</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-comment-dots"></i>
+                        <span>Smart Conversations</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-file-upload"></i>
+                        <span>File & Image Analysis</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bolt"></i>
+                        <span>GPT-4o Mini Powered</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure & Private</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Login Form -->
+            <div class="login-form-container">
+                <div class="login-header">
+                    <h2>Welcome Back</h2>
+                    <p>Sign in to continue to your AI assistant</p>
+                </div>
+
+                <!-- Google Login Button -->
+                <div class="social-login">
+                    <button class="google-login-btn" id="googleLogin">
+                        <div class="google-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24">
+                                <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/>
+                                <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/>
+                                <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/>
+                                <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/>
+                            </svg>
+                        </div>
+                        <span>Continue with Google</span>
+                    </button>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider">
+                    <span>or</span>
+                </div>
+
+                <!-- Email Login Form -->
+                <form class="email-login-form" id="emailLoginForm">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                            <button type="button" class="toggle-password" id="togglePassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="forgot-password">
+                            <a href="#" class="forgot-link">Forgot password?</a>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="rememberMe">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                    </div>
+
+                    <button type="submit" class="login-btn" id="emailLoginBtn">
+                        <span>Sign in with Email</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+
+                <!-- Demo Login Button -->
+                <div class="demo-login">
+                    <p>Just want to explore?</p>
+                    <button class="demo-btn" id="demoLogin">
+                        <i class="fas fa-rocket"></i>
+                        Try Demo Version
+                    </button>
+                </div>
+
+                <!-- Sign Up Link -->
+                <div class="signup-link">
+                    <p>Don't have an account? <a href="#" id="signupLink">Sign up here</a></p>
+                </div>
+
+                <!-- Privacy Notice -->
+                <div class="privacy-notice">
+                    <p>By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Modal -->
+        <div class="loading-modal" id="loadingModal">
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <h3>Signing you in...</h3>
+                <p>Preparing your AI assistant</p>
+            </div>
+        </div>
+
+        <!-- Signup Modal -->
+        <div class="modal" id="signupModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Create Account</h3>
+                    <button class="close-modal" id="closeSignupModal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Account creation is not available in the prototype. Use the demo login to explore the application.</p>
+                    <button class="modal-btn" id="gotoDemo">
+                        <i class="fas fa-rocket"></i>
+                        Try Demo Version
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
