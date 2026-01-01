@@ -1,7 +1,7 @@
 // Main Application JavaScript - OpenRouter API with DuckDuckGo Search Integration
 const API_CONFIG = {
     name: "OpenRouter AI",
-    apiKey: "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",
+    apiKey: "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",
     apiEndpoint: "https://openrouter.ai/api/v1/chat/completions",
     defaultModel: "deepseek/deepseek-r1-0528:free",
     
